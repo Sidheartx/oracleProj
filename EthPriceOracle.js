@@ -9,3 +9,4 @@ const OracleJSON = require('./oracle/build/contracts/EthPriceOracle.json')
 var pendingRequests = []
 
 // Start here
+Starting
