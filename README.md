@@ -1,2 +1,2 @@
 # oracleProj
-Build a Price Oracle which checks for the Eth Price - 
+Building a EthPrice Oracle which checks for the Eth Price - 
