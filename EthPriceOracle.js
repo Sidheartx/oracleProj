@@ -29,3 +29,16 @@ async function filterEvents (oracleContract, web3js) {
   })
 
   }
+
+  async function addRequestToQueue (event) {
+  const callerAddress = event.returnValues.callerAddress
+  const id = event.returnValues.id
+  pendingRequests.push({ callerAddress, id })
+}
+
+async function processQueue (oracleContract, ownerAddress) {
+  let processedRequests = 0
+  while (pendingRequests.length > 0 && processedRequests < CHUNK_SIZE) {
+    // Start here
+  }
+}
